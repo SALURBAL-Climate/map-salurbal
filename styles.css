@@ -1,0 +1,572 @@
+body {
+    margin: 0;
+    background: #d8e6ed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+#map-container {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    margin: auto;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+#map-container-usa {
+    position: fixed;
+    left: 43px;
+    bottom: 373px;
+    width: 800px;
+    height: 800px;
+    margin: auto;
+    transform-origin: center center;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+#map-container-mex {
+    position: fixed;
+    left: 303px;
+    bottom: 523px;
+    width: 800px;
+    height: 800px;
+    margin: auto;
+    transform-origin: center center;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+#map-container-gut {
+    position: fixed;
+    left: 303px;
+    bottom: 1303px;
+    width: 800px;
+    height: 800px;
+    margin: auto;
+    transform-origin: center center;
+    transform: scale(1.9);
+    transition: transform 0.3s ease;
+}
+#map-container-colombia {
+    position: fixed;
+    left: -105px;
+    bottom: 1391px;
+    width: 800px;
+    height: 800px;
+    margin: auto;
+    transform-origin: center center;
+    transform: scale(1.6);
+    transition: transform 0.3s ease;
+}
+#map-container-peru {
+    position: fixed;
+    left: -105px;
+    bottom: 1791px;
+    width: 800px;
+    height: 800px;
+    margin: auto;
+    transform-origin: center center;
+    transform: scale(1.6);
+    transition: transform 0.3s ease;
+}
+#map-container-brasil {
+    position: fixed;
+    left: -405px;
+    bottom: 1191px;
+    width: 800px;
+    height: 800px;
+    margin: auto;
+    transform-origin: center center;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+#map-container-argentina {
+    position: fixed;
+    left: -405px;
+    bottom: 1591px;
+    width: 800px;
+    height: 800px;
+    margin: auto;
+    transform-origin: center center;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+#map-container-chile {
+    position: fixed;
+    left: -305px;
+    bottom: 1391px;
+    width: 800px;
+    height: 800px;
+    margin: auto;
+    transform-origin: center center;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.country {
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.country:hover {
+    filter: brightness(1.3);
+    cursor: pointer;
+}
+
+.country path {
+    transition: fill 0.3s ease;
+}
+
+
+.country-icon {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 1002;
+}
+
+.country-icon:hover {
+    transform: scale(1.2);
+}
+
+
+#tooltip {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    pointer-events: none;
+    display: none;
+    z-index: 1000;
+}
+
+#hitCanvas {
+    display: none;
+    position: absolute;
+    pointer-events: none;
+}
+
+.logo_header {
+    margin: 20px;
+    position: fixed;
+    width: 133px;
+    height: 93px;
+    top: 0px;
+    left: 0px;
+    background-image: url(images/Assets/Logo_salurba_blue.png);
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+    z-index: 10000;
+}
+
+
+.info-container {
+    position: absolute;
+    bottom: -1090px;
+    left: 80px;
+    width: 450px;
+    color: #303C51;
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.info-container-researcher {
+    position: absolute;
+    top: 100px;
+    right: 130px;
+    width: 950px;
+    color: #303C51;
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.map-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #303C51;
+}
+
+.map-subtitle {
+    font-size: 44px;
+    font-weight: bold;
+    color: #303C51;
+    margin-top: 0px;
+}
+
+.info-text {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    margin-top: 20px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+.social-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 10px;
+    background-color: #748EB1;
+    color: white;
+    text-decoration: none;
+    border-radius: 100px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.social-btn:hover {
+    background-color: #5f7591;
+}
+
+.social-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.title-button-container-header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #5f7591;
+    margin-bottom: 20px;
+}
+
+.header-title {
+    margin: 0;
+    left: 0px;
+    top: 0px;
+    font-size: 23px;
+}
+
+.back-btn {
+    margin-left: auto;
+    right: 0px;
+    top: 0px;
+}
+
+.researcher-name {
+    font-size: 60px;
+    font-weight: bold;
+    color: #303C51;
+}
+
+.container-col {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+}
+
+
+.col-1,
+.col-2 {
+    flex: 1;
+}
+
+.col-1 {
+    max-width: 45%;
+}
+
+.col-2 {
+    max-width: 45%;
+}
+
+
+
+/*Selector de lenguaje*/
+
+.language-selector {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 2000;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    padding: 8px 16px;
+    background: #5f7591;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #4e5e73;
+    border-radius: 4px;
+    z-index: 2000;
+}
+
+.dropdown-content button {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    color: white;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-content button.active {
+    background: #00BB9E;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 1500px) {
+
+    .info-container {
+        position: absolute;
+        bottom: -1390px;
+        left: 80px;
+        width: 350px;
+        color: #303C51;
+        font-family: Arial, sans-serif;
+        z-index: 1000;
+        padding: 20px;
+        border-radius: 8px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    #map-container {
+        transform: scale(0.55);
+    }
+
+    .info-container {
+        position: relative;
+        width: 90%;
+        margin: 650px auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .info-container-researcher {
+        position: relative;
+        width: 90%;
+        margin: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .container-col {
+        flex-direction: column;
+    }
+
+    .col-1,
+    .col-2 {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #map-container {
+        transform: scale(0.45);
+        left: -100px;
+        /*margin: -200px auto;
+         Ajusta el margen negativo para centrar mejor */
+    }
+
+    #map-container-colombia,
+    #map-container-usa,
+    #map-container-mex,
+    #map-container-gut,
+    #map-container-peru,
+    #map-container-brasil,
+    #map-container-argentina,
+    #map-container-chile {
+        display: none;
+    }
+
+    .info-container {
+        position: relative;
+        width: 90%;
+        margin: 500px auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .info-container-researcher {
+        position: relative;
+        width: 90%;
+        margin: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .container-col {
+        flex-direction: column;
+    }
+
+    .col-1,
+    .col-2 {
+        max-width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+    #map-container {
+        transform: scale(0.38);
+        /*margin: 0px -30px;*/
+        left: -90px;
+        width: 430px;
+    }
+
+    #map-container-colombia,
+    #map-container-usa,
+    #map-container-mex,
+    #map-container-gut,
+    #map-container-peru,
+    #map-container-brasil,
+    #map-container-argentina,
+    #map-container-chile {
+        display: none;
+    }
+
+    .info-container {
+        position: relative;
+        width: 90%;
+        margin: 350px auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .country {
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #map-container {
+        transform: scale(0.32);
+        /*margin: -350px auto;*/
+        left: -120px;
+    }
+
+    #map-container-colombia,
+    #map-container-usa,
+    #map-container-mex,
+    #map-container-gut,
+    #map-container-peru,
+    #map-container-brasil,
+    #map-container-argentina,
+    #map-container-chile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #map-container {
+        transform: scale(0.32);
+        /*margin: -350px auto;*/
+        left: -120px;
+    }
+
+    #map-container-colombia,
+    #map-container-usa,
+    #map-container-mex,
+    #map-container-gut,
+    #map-container-peru,
+    #map-container-brasil,
+    #map-container-argentina,
+    #map-container-chile {
+        display: none;
+    }
+}
+
+/* Ajuste para dispositivos en landscape */
+@media screen and (max-height: 500px) {
+    #map-container {
+        transform: scale(0.2);
+    }
+
+    #map-container-colombia,
+    #map-container-usa,
+    #map-container-mex,
+    #map-container-gut,
+    #map-container-peru,
+    #map-container-brasil,
+    #map-container-argentina,
+    #map-container-chile {
+        display: none;
+    }
+
+    /* .info-container {
+        position: relative;
+        width: 90%;
+        margin: 350px auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    } */
+
+}
