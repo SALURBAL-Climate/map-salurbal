@@ -2,6 +2,10 @@
 
 Embárcate en este recorrido por ocho de los países de América Latina y conoce a través de las experiencias de sus jóvenes investigadores más sobre este proyecto que, con un enfoque multidisciplinario, analiza la conexión entre la salud pública urbana y el cambio climático para impulsar políticas y acciones comunitarias. Estas son las historias que hacen posible SALURBAL-Clima.
 
+## Demo
+
+Este proyecto lo puedes visualizar online en: [MAP-Salurbal](https://sego.devlight.net). 
+
 ## Tecnologías utilizadas
 
 El desarrollo de esta página web interactiva se realizó utilizando las siguientes tecnologías:
