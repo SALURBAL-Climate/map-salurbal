@@ -60,7 +60,7 @@ Si deseas contribuir a este proyecto:
 Si tienes alguna duda o comentario, por favor contáctanos a través de:
 
 - **Correo electrónico**: segiraldos@gmail.com
-- **Numero de contacto**: 31666925953
+- **Numero de contacto**: 3166925953
 
 ---
 
