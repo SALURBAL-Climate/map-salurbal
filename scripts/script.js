@@ -93,55 +93,55 @@ const countryIcons = {
         x: 251,
         y: 640,
         iconUrl: 'images/analucia_usa.png',
-        url: '/usa.html'
+        url: '/map-salurbal/usa.html'
     },
     'mexico': {
         x: -38,
         y: 854,
         iconUrl: 'images/celia_mexico.png',
-        url: '/mexico.html'
+        url: '/map-salurbal/mexico.html'
     },
     'guatemala': {
         x: 91,
         y: 930,
         iconUrl: 'images/daniela_guatemala.png',
-        url: '/guatemala.html'
+        url: '/map-salurbal/guatemala.html'
     },
     'colombia': {
         x: 326,
         y: 1033,
         iconUrl: 'images/leonardo_colombia.png',
-        url: '/colombia.html'
+        url: '/map-salurbal/colombia.html'
     },
     'colombia-02': {
         x: 392,
         y: 1121,
         iconUrl: 'images/laura_colombia.png',
-        url: '/colombia_02.html'
+        url: '/map-salurbal/colombia_02.html'
     },
     'peru': {
         x: 359,
         y: 1375,
         iconUrl: 'images/penelope_peru.png',
-        url: '/peru.html'
+        url: '/map-salurbal/peru.html'
     },
     'brasil': {
         x: 777,
         y: 1568,
         iconUrl: 'images/amanda_brasil.png',
-        url: '/brasil.html'
+        url: '/map-salurbal/brasil.html'
     },
     'chile': {
         x: 449,
         y: 1861,
         iconUrl: 'images/tamara_chile.png',
-        url: '/chile.html'
+        url: '/map-salurbal/chile.html'
     },
     'argentina': {
         x: 618,
         y: 1797,
         iconUrl: 'images/ignacio_argentina.png',
-        url: '/argentina.html'
+        url: '/map-salurbal/argentina.html'
     },
 };
 
