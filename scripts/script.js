@@ -96,8 +96,8 @@ const countryIcons = {
         url: '/map-salurbal/usa.html'
     },
     'estados-unidos-02': {
-        x: 110,
-        y: 610,
+        x: -170,
+        y: 640,
         iconUrl: 'images/kai_usa.png',
         url: '/map-salurbal/usa_02.html'
     },
@@ -144,8 +144,8 @@ const countryIcons = {
         url: '/map-salurbal/chile.html'
     },
     'chile-02': {
-        x: 449,
-        y: 1700,
+        x: 465,
+        y: 1720,
         iconUrl: 'images/giovanna_chile.png',
         url: '/map-salurbal/chile_02.html'
     },
