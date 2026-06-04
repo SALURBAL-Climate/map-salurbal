@@ -93,73 +93,73 @@ const countryIcons = {
         x: 251,
         y: 640,
         iconUrl: 'images/analucia_usa.png',
-        url: '/map-salurbal/usa.html'
+        url: 'usa.html'
     },
     'estados-unidos-02': {
         x: -170,
         y: 640,
         iconUrl: 'images/kai_usa.png',
-        url: '/map-salurbal/usa_02.html'
+        url: 'usa_02.html'
     },
     'mexico': {
         x: -38,
         y: 854,
         iconUrl: 'images/celia_mexico.png',
-        url: '/map-salurbal/mexico.html'
+        url: 'mexico.html'
     },
     'guatemala': {
         x: 91,
         y: 930,
         iconUrl: 'images/daniela_guatemala.png',
-        url: '/map-salurbal/guatemala.html'
+        url: 'guatemala.html'
     },
     'colombia': {
         x: 326,
         y: 1033,
         iconUrl: 'images/leonardo_colombia.png',
-        url: '/map-salurbal/colombia.html'
+        url: 'colombia.html'
     },
     'colombia-02': {
         x: 392,
         y: 1121,
         iconUrl: 'images/laura_colombia.png',
-        url: '/map-salurbal/colombia_02.html'
+        url: 'colombia_02.html'
     },
     'peru': {
         x: 359,
         y: 1375,
         iconUrl: 'images/penelope_peru.png',
-        url: '/map-salurbal/peru.html'
+        url: 'peru.html'
     },
     'brasil': {
         x: 777,
         y: 1568,
         iconUrl: 'images/amanda_brasil.png',
-        url: '/map-salurbal/brasil.html'
+        url: 'brasil.html'
     },
     'chile': {
         x: 449,
         y: 1861,
         iconUrl: 'images/tamara_chile.png',
-        url: '/map-salurbal/chile.html'
+        url: 'chile.html'
     },
     'chile-02': {
         x: 465,
         y: 1720,
         iconUrl: 'images/giovanna_chile.png',
-        url: '/map-salurbal/chile_02.html'
+        url: 'chile_02.html'
     },
     'chile-03': {
         x: 449,
         y: 2020,
         iconUrl: 'images/lauraorlando_chile.png',
-        url: '/map-salurbal/chile_03.html'
+        url: 'chile_03.html'
     },
     'argentina': {
         x: 618,
         y: 1797,
         iconUrl: 'images/ignacio_argentina.png',
-        url: '/map-salurbal/argentina.html'
+        url: 'argentina.html'
     },
 };
 
