@@ -95,6 +95,12 @@ const countryIcons = {
         iconUrl: 'images/analucia_usa.png',
         url: '/map-salurbal/usa.html'
     },
+    'estados-unidos-02': {
+        x: -170,
+        y: 640,
+        iconUrl: 'images/kai_usa.png',
+        url: '/map-salurbal/usa_02.html'
+    },
     'mexico': {
         x: -38,
         y: 854,
@@ -136,6 +142,18 @@ const countryIcons = {
         y: 1861,
         iconUrl: 'images/tamara_chile.png',
         url: '/map-salurbal/chile.html'
+    },
+    'chile-02': {
+        x: 465,
+        y: 1720,
+        iconUrl: 'images/giovanna_chile.png',
+        url: '/map-salurbal/chile_02.html'
+    },
+    'chile-03': {
+        x: 449,
+        y: 2020,
+        iconUrl: 'images/lauraorlando_chile.png',
+        url: '/map-salurbal/chile_03.html'
     },
     'argentina': {
         x: 618,
